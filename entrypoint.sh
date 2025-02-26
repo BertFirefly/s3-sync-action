@@ -40,6 +40,9 @@ text
 EOF
 
 echo "Point 2"
+
+aws configure get region
+
 echo "aws s3 sync ${SOURCE_DIR:-.} s3://${AWS_S3_BUCKET}/${DEST_DIR} \
               --profile s3-sync-action \
               --no-progress \
