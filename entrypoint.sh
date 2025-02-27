@@ -41,7 +41,7 @@ EOF
 
 echo "Point 2"
 
-echo "${AWS_REGION}"
+cat ~/.aws/config
 
 echo "aws s3 sync ${SOURCE_DIR:-.} s3://${AWS_S3_BUCKET}/${DEST_DIR} \
               --profile s3-sync-action \
