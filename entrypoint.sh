@@ -40,7 +40,7 @@ text
 EOF
 
 echo "Point 2"
-
+aws configure set region us_east_1
 cat ~/.aws/config
 
 echo "aws s3 sync ${SOURCE_DIR:-.} s3://${AWS_S3_BUCKET}/${DEST_DIR} \
